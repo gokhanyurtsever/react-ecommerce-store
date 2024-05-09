@@ -1,3 +1,4 @@
+import Banner from "./components/Banner"
 import Features from "./components/Features"
 import Header from "./components/Header"
 import Navbar from "./components/Navbar"
@@ -14,6 +15,7 @@ function App() {
       <Features />
       <ProductSlider title="mobile & tablets" data={iphones} delay={7000}
        />
+       <Banner />
     </>
   )
 }
