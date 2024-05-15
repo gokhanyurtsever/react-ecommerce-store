@@ -1,19 +1,18 @@
-
 import { Box, Container, Stack, Typography } from "@mui/material";
 
 type postT = {
-    image:string;
-    title:string;
-    date:string;
-    link:string;
-    category:string;
+	image: string;
+	title: string;
+	date: string;
+	link: string;
+	category: string;
+};
+
+interface ProductSliderProps {
+	title: string;
+	posts: postT[];
 }
 
-interface Props {
-    title:string;
-    posts:postT[];
-
-}
 const LatestPosts = ({ title, posts }: ProductSliderProps) => {
 	return (
 		<Container
@@ -112,4 +111,4 @@ const LatestPosts = ({ title, posts }: ProductSliderProps) => {
 	);
 };
 
-export default LatestPosts
+export default LatestPosts;

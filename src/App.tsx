@@ -1,10 +1,11 @@
 import Banner from "./components/Banner"
+import CommentsSlider from "./components/CommentsSlider"
 import Features from "./components/Features"
 import Header from "./components/Header"
 import LatestPosts from "./components/LatestPost"
 import Navbar from "./components/Navbar"
 import ProductSlider from "./components/ProductSlider"
-import { BlogPosts, iphones } from "./data"
+import { BlogPosts, comments, iphones } from "./data"
 
 function App() {
   
@@ -21,6 +22,7 @@ function App() {
        title="latest posts" 
        posts={BlogPosts}
        />
+       <CommentsSlider comments={comments} delay={5000} />
     </>
   )
 }
