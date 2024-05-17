@@ -5,6 +5,7 @@ import Header from "./components/Header"
 import LatestPosts from "./components/LatestPost"
 import Navbar from "./components/Navbar"
 import ProductSlider from "./components/ProductSlider"
+import Subscribe from "./components/Subscribe"
 import { BlogPosts, comments, iphones } from "./data"
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
        posts={BlogPosts}
        />
        <CommentsSlider comments={comments} delay={5000} />
+       <Subscribe />
     </>
   )
 }
