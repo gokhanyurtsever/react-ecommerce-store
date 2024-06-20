@@ -8,6 +8,7 @@ import Navbar from "./components/Navbar"
 import ProductSlider from "./components/ProductSlider"
 import Subscribe from "./components/Subscribe"
 import { BlogPosts, comments, instaPosts, iphones } from "./data"
+import Footer from "./components/Footer";
 
 function App() {
   
@@ -27,6 +28,7 @@ function App() {
        <CommentsSlider comments={comments} delay={5000} />
        <Subscribe />
        <Instagram images={instaPosts} />
+       <Footer  />
     </>
   )
 }
